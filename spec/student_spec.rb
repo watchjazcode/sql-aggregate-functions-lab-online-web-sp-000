@@ -12,7 +12,6 @@ describe "aggregate functions sql" do
 
   describe "#highest_student_gpa" do
     it 'finds the highest gpa' do
-      binding.pry
       expect(@db.execute(highest_student_gpa)).to eq([[4.0]])
     end
   end
